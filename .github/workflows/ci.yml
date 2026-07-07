@@ -18,6 +18,7 @@ jobs:
         java: ['17', '21']
     steps:
       - uses: actions/checkout@v4
+      - run: git clone --depth 1 https://github.com/kotoba-lang/xml.git ../xml
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
