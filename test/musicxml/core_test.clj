@@ -3,7 +3,7 @@
    builders (note/rest/attributes/measure → the right element tree) and the score-partwise document
    wrapper (part-list/part/measure). xmllint validates the same output in `bb gate`."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kotoba.musicxml :as m]))
 
 (deftest builders
