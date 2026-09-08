@@ -11,7 +11,7 @@
      (measure 1 attrs note…)
      (score-partwise {:part-name \"Music\"} measure…)  ⇒ a full <?xml?> <score-partwise> document"
   (:require [xml.core :as xml]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (defn- nm [x] (if (keyword? x) (name x) (str x)))
 
