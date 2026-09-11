@@ -1,7 +1,7 @@
 (ns musicxml.core-test
   "Golden tests for kotoba.musicxml — the MusicXML (score) hiccup, built on kotoba.xml. They pin the
    builders (note/rest/attributes/measure → the right element tree) and the score-partwise document
-   wrapper (part-list/part/measure). xmllint validates the same output in `bb gate`."
+   wrapper (part-list/part/measure). xmllint validates the same output in `kbb -M:gate`."
   (:require [clojure.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [kotoba.musicxml :as m]))
